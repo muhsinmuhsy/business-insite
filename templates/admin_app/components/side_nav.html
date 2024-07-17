@@ -1,0 +1,32 @@
+{% load static %}
+<div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+    <div class="logo">
+        <a hef="home.html"><img src="{% static 'customer_app/mine/logooo.png' %}" alt="logo"  class="hidden-xs hidden-sm">
+                <img src=" {% static 'customer_app/mine/logooo.png' %}" alt="logo" class="visible-xs visible-sm circle-logo">
+        </a>
+    </div>
+    <div class="navi">
+        <ul>
+            <li class="
+            {% if current_page == 'dashboard' %}
+                active
+            {% endif %}
+            "><a href="{% url 'dashboard' %}"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Dashboard</span></a></li>
+            <!-- <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Workflow</span></a></li> -->
+            <li class="
+            {% if current_page == 'service_list' %}
+                active
+            {% endif %}
+            "><a href="{% url 'service_list' %}"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Services</span></a></li>
+            <li
+            class="
+            {% if current_page == 'profile' %}
+                active
+            {% endif %}
+            "><a href="{% url 'profile' %}"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Profile</span></a></li>
+            
+            <!-- <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li> -->
+        </ul>
+    </div>
+</div>

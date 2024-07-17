@@ -1,0 +1,17 @@
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-end {
+    justify-content: end !important;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: solid #8a8686;
+}

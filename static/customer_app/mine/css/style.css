@@ -1,0 +1,48 @@
+.custom-phone {
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    color: #0c3b66;
+}
+
+.social-icon-mine{
+    margin-right: 13px;
+}
+
+.social-icon-mine i {
+    padding-right: 18px;
+    font-size: 18px;
+}
+
+
+@media  (max-width: 667px){
+    .custom-phone{
+        display: none;
+    }
+    .hide-on-desktop-add-icon{
+        display: none;
+    }
+    .social-icon-mine{
+        display: none;
+    }
+    
+}
+
+
+.custom-container-two {
+    margin-right: 240px;
+    margin-left: 58px;
+}
+
+
+@media screen and (max-width:1358px) {
+    .hide-num{
+        display: none;
+    }
+}
+
+@media  screen and (max-width:1200px) {
+  .custom-phone{
+    display: none;
+  }
+}

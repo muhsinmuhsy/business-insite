@@ -1,0 +1,50 @@
+
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="{% static 'admin_app/dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'admin_app/style.css' %}">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            {% include 'admin_app/components/side_nav.html' %}
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+
+                {% include 'admin_app/components/header.html' %}
+
+                {% block content %}
+
+                {% endblock content %}
+
+            </div>
+
+        </div>
+    </div>
+   
+    
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="offcanvas"]').click(function(){
+                $("#navigation").toggleClass("hidden-xs");
+            });
+         });
+         
+         
+         
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</body>
+</html>

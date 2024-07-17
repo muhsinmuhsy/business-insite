@@ -1,0 +1,804 @@
+{% extends "customer_app/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- main-area -->
+    <main class="fix">
+        <!-- slider-area -->
+        <section class="slider__area">
+            <div class="swiper-container slider__active">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__single">
+                        <div class="slider__bg" data-background="{% static 'customer_app/img/banner/image-1.jpg' %}"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="slider__content">
+                                        <span class="sub-title">We Are Expert In This Field</span>
+                                        <h2 class="title">Transforming Dreams into Financial Reality</h2>
+                                        <p>We helps you to convert your data into a strategic asset and get business insights.</p>
+                                        <a class='btn' href="/contact/">Free Consulting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape">
+                            <img src="{% static 'customer_app/img/slider/slider_shape01.png' %}" alt="">
+                            <img src="{% static 'customer_app/img/banner/design.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__single">
+                        <div class="slider__bg" data-background="{% static 'customer_app/img/banner/image-2.jpg' %}"></div>
+                        <div class="container">
+                            <div class="row1">
+                                <div class="col-lg-6">
+                                    <div class="slider__content">
+                                        <span class="sub-title">We Are Expert In This Field</span>
+                                        <h2 class="title">Transforming Dreams into Financial Reality</h2>
+                                        <p>We helps you to convert your data into a strategic asset and get business insights.</p>
+                                        <a class='btn' href="/contact/">Free Consulting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__shape">
+                            <img src="{% static 'customer_app/img/slider/slider_shape01.png' %}" alt="">
+                            <img src="{% static 'customer_app/img/banner/design.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider-area-end -->
+        <!-- brand-area -->
+        <!-- <div class="brand-area brand__area-two">
+            <div class="container">
+                <div class="swiper-container brand-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img01.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img02.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img03.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img04.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img05.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img06.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img src="{% static 'customer_app/img/brand/brand_img03.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- brand-area -->
+        <!-- about-area -->
+        <section class="about__area-three about__bg-two" data-background="{% static 'customer_app/img/bg/h3_about_bg.jpg' %}">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="about__img-wrap-three">
+                            <img src="{% static 'customer_app/img/banner/picc-4.jpg' %}" alt="">
+                            <!-- <img src="{% static 'customer_app/img/images/h3_about_img02.jpg' %}" alt="" data-parallax='{"x" : 50 }'> -->
+                            <!-- <div class="shape">
+                                <img src="{% static 'customer_app/img/images/h3_about_img_shape.png' %}" alt="" class="alltuchtopdown">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content-three">
+                            <div class="section-title mb-25 tg-heading-subheading animation-style3">
+                                <span class="sub-title">About Our Company</span>
+                                <h2 class="title tg-element-title">Providing Expert Advice On Business Consulting, Planning & Success</h2>
+                            </div>
+                            <p>As Business Insight is positioned as a strategic growth partner and virtual CFO for startups, small, and medium-sized businesses, the unique selling proposition (USP) lies in our focus on facilitating growth and guiding your clients towards a successful and profitable future.</p>
+                            <div class="about__content-inner about__content-inner-two">
+                                <div class="experience__box-three">
+                                    <div class="title">
+                                        <span>10+</span>
+                                    </div>
+                                    <p>Years <span>Experience</span> in Consulting</p>
+                                </div>
+                                <div class="about__list-box about__list-box-two">
+                                    <ul class="list-wrap">
+                                        <li><i class="flaticon-arrow-button"></i>Business Growth</li>
+                                        <li><i class="flaticon-arrow-button"></i>Analysis & Research</li>
+                                        <li><i class="flaticon-arrow-button"></i>100% Secure</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="about-bottom about-bottom-two">
+                                <div class="author-wrap">
+                                    <div class="thumb">
+                                        <img src="{% static 'customer_app/img/images/author_img.png' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <img src="{% static 'customer_app/img/images/sign.png' %}" alt="">
+                                        <h4 class="title">Martinaze <span>, CEO</span></h4>
+                                    </div>
+                                </div>
+                                <div class="about__phone">
+                                    <div class="icon">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span>Hot Line Number</span>
+                                        <a href="tel:0123456789">+123 8989 444</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="about__shape-wrap-three">
+                                <img src="{% static 'customer_app/img/images/h3_about_shape01.png' %}" alt="" class="rotateme">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+        <!-- services-area -->
+        <section class="services__area-three services__bg-three" data-background="{% static 'customer_app/img/bg/h3_services_bg.jpg' %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-16">
+                        <div class="section-title white-title text-center mb-50 tg-heading-subheading animation-style3">
+                            <span class="sub-title1">WHAT WE OFFER</span>
+                            <h6 class="title tg-element-title">Business Insight provides expert services for small and medium enterprises, including Business Registration, Regulatory Compliance, Tax Filing, IPR management</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-24">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-profit"></i>
+                                </div>
+                                <div class="services__item-top-title" >
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Nidhi Company Registration</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three">
+                                <p>Are you looking to simplify your Nidhi Company registration process? Then you are at the right place. Corpbiz offers end to end support from application filling to compliance for in India</p>
+                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}"  style="width: 40%;">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-target"></i>
+                                </div>
+                                <div class="services__top-title">
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Trademark Hearing</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three" >
+                                <p style="padding-bottom: 21px;">
+                                    The trademark hearing is a complicated legal procedure that requires a professional approach. If you want to surpass..
+
+
+                                </p>
+                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-financial-profit"></i>
+                                </div>
+                                <div class="services__top-title">
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Income Tax Return Filing</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three">
+                                <p>Take the help of our expert services to ensure quick, easy, and completely risk-free filing of income tax return.
+                                    Corpbiz's professionals will ensure that your tax returns are filed on time..</p>
+                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a class='btn btn-two' href="/services/" >Read More</a>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-piggy-bank"></i>
+                                </div>
+                                <div class="services__top-title">
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Tax <br> Advisory</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three">
+                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
+                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-investment-1"></i>
+                                </div>
+                                <div class="services__top-title">
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Money <br> Growth Method</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three">
+                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
+                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services__item-three">
+                            <div class="services__item-top">
+                                <div class="services__icon-three">
+                                    <i class="flaticon-startup"></i>
+                                </div>
+                                <div class="services__top-title">
+                                    <h2 class="title"><a href="{% url 'services_details' %}">Bootstrap <br> Planning</a></h2>
+                                </div>
+                            </div>
+                            <div class="services__content-three">
+                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
+                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- services-area-end -->
+        <!-- choose-area -->
+        <section class="choose__area-three">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-7 col-md-9 order-0 order-lg-2">
+                        <div class="choose__img-wrap-three">
+                            <div class="main-img">
+                                <img src="{% static 'customer_app/img/banner/picc-3.jpg' %}" alt="">
+                                <!-- <a href="#" class="play-btn"><i class="fas fa-play"></i></a> -->
+                            </div>
+    
+                            <div class="shape">
+                                <img src="{% static 'customer_app/img/images/h3_choose_img_shape.jpg' %}" alt="" class="alltuchtopdown">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="choose__content-three">
+                            <div class="section-title mb-25 tg-heading-subheading animation-style3">
+                                <span class="sub-title">Why We Are The Best</span>
+                                <h2 class="title tg-element-title">We Offer Business Insight World Class Consulting</h2>
+                            </div>
+                            <p>Business Insight is a tech-driven platform committed to delivering professional services . We deliver exceptional services to our clients. </p>
+                            <div class="choose__list">
+                                <ul class="list-wrap">
+                                    <li>
+                                        <div class="choose__list-box">
+                                            <div class="choose__list-icon">
+                                                <i class="flaticon-financial-profit"></i>
+                                            </div>
+                                            <div class="choose__list-content">
+                                                <h4 class="title">Quick Response</h4>
+                                                <p> We make sure to answer every query on time.<br>Moreover, none of our emails or calls go unanswered.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="choose__list-box">
+                                            <div class="choose__list-icon">
+                                                <i class="flaticon-report"></i>
+                                            </div>
+                                            <div class="choose__list-content">
+                                                <h4 class="title">Advanced Technology</h4>
+                                                <p> Our high-tech platform with customer empowerment tools enables customers to get the best. You can connect with our experts with just a single click.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose__shape-wrap-three">
+                <img src="{% static 'customer_app/img/images/h3_choose_shape01.jpg' %}" alt="" data-parallax='{"x" : 100 , "y" : -100 }'>
+                <img src="{% static 'customer_app/img/images/h3_choose_shape02.jpg' %}" alt="">
+            </div>
+        </section>
+        <!-- choose-area-end -->
+        <!-- project-area -->
+        <!-- <section class="project__area-three project__bg-three" data-background="{% static 'customer_app/img/bg/h3_project_bg.jpg' %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                            <span class="sub-title">OUR PROJECTS</span>
+                            <h2 class="title tg-element-title">We Provide Solutions To <br> Big & Small Organizations For Work</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper-container project-active">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project__item-three shine-animate-item">
+                                        <div class="project__content-three">
+                                            <span>Inventory Tracking</span>
+                                            <h2 class="title"><a href='project-details.html'>Inventory Management</a></h2>
+                                            <p>when anner unknown printer took type and scramble to make specimen book.</p>
+                                            <a class='btn btn-two' href='project-details.html'>See Details</a>
+                                        </div>
+                                        <div class="project__thumb-three shine-animate">
+                                            <img src="{% static 'customer_app/img/project/h3_project_img01.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project__item-three shine-animate-item">
+                                        <div class="project__content-three">
+                                            <span>Inventory Tracking</span>
+                                            <h2 class="title"><a href='project-details.html'>Inventory Management</a></h2>
+                                            <p>when anner unknown printer took type and scramble to make specimen book.</p>
+                                            <a class='btn btn-two' href='project-details.html'>See Details</a>
+                                        </div>
+                                        <div class="project__thumb-three shine-animate">
+                                            <img src="{% static 'customer_app/img/project/h3_project_img01.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__nav-wrap">
+                                <div class="project-button-prev"><i class="flaticon-right-arrow"></i></div>
+                                <div class="project-button-next"><i class="flaticon-right-arrow"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project__shape-wrap-three">
+                <img src="{% static 'customer_app/img/project/h3_project_shape01.png' %}" alt="" data-aos="fade-left" data-aos-delay="400">
+                <img src="{% static 'customer_app/img/project/h3_project_shape02.png' %}" alt="" class="alltuchtopdown">
+            </div>
+        </section> -->
+        <!-- project-area-end -->
+        <!-- counter-area -->
+        <section class="counter-area-three">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="counter-item">
+                            <div class="icon">
+                                <i class="flaticon-trophy"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="count"><span class="odometer" data-count="45"></span>+</h2>
+                                <p>Successfully <br> Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="counter-item">
+                            <div class="icon">
+                                <i class="flaticon-time"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="count"><span class="odometer" data-count="10"></span>+</h2>
+                                <p>Years of Experiences <br> To Run This Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="counter-item">
+                            <div class="icon">
+                                <i class="flaticon-happy"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="count"><span class="odometer" data-count="100"></span>K</h2>
+                                <p>Satisfied <br> 100% Our Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="counter-item">
+                            <div class="icon">
+                                <i class="flaticon-china"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="count"><span class="odometer" data-count="19"></span>+</h2>
+                                <p>All Over The World <br> We Are Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- counter-area-end -->
+        <!-- request-area -->
+        <section class="request__area-two">
+            <div class="request__bg-two" data-background="{% static 'customer_app/img/banner/pic-2.jpg' %}"></div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="request__content-two">
+                            <h2 class="title">Offering The Best <span>Experience Of</span> Finance Services</h2>
+                            <div class="request__phone">
+                                <div class="icon">
+                                    <i class="flaticon-phone-call"></i>
+                                </div>
+                                <div class="content">
+                                    <span>Call or Whatsapp</span>
+                                    <a href="tel:8075929458"> 8075929458</a>
+                                </div>
+                            </div>
+                            <a href="tel:0123456789" class="btn">Request a Free Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- request-area-end -->
+        <!-- team-area -->
+        <!-- <section class="team__area-three">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="section-title mb-50 tg-heading-subheading animation-style3">
+                            <span class="sub-title">MEET OUR TEAM</span>
+                            <h2 class="title tg-element-title">Financial Expertise You <br> Can Trust</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="section-content">
+                            <p>Our power of choice is untrammelled and when nothing preven tsbeing able to do what we like best every pleasure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-24 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="team__item-three shine-animate-item">
+                            <div class="team__thumb-three shine-animate">
+                                <img src="{% static 'customer_app/img/team/h3_team_img01.jpg' %}" alt="">
+                            </div>
+                            <div class="team__content-three">
+                                <h4 class="title"><a href='team-details.html'>Brooklyn Simmons</a></h4>
+                                <span>Finance Advisor</span>
+                            </div>
+                            <div class="team-social team__social-three">
+                                <ul class="list-wrap">
+                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                                <div class="social-toggle-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="team__item-three shine-animate-item">
+                            <div class="team__thumb-three shine-animate">
+                                <img src="{% static 'customer_app/img/team/h3_team_img02.jpg' %}" alt="">
+                            </div>
+                            <div class="team__content-three">
+                                <h4 class="title"><a href='team-details.html'>Eleanor Pena</a></h4>
+                                <span>Finance Advisor</span>
+                            </div>
+                            <div class="team-social team__social-three">
+                                <ul class="list-wrap">
+                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                                <div class="social-toggle-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="team__item-three shine-animate-item">
+                            <div class="team__thumb-three shine-animate">
+                                <img src="{% static 'customer_app/img/team/h3_team_img03.jpg' %}" alt="">
+                            </div>
+                            <div class="team__content-three">
+                                <h4 class="title"><a href='team-details.html'>Floyd Miles</a></h4>
+                                <span>Finance Advisor</span>
+                            </div>
+                            <div class="team-social team__social-three">
+                                <ul class="list-wrap">
+                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                                <div class="social-toggle-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="team__item-three shine-animate-item">
+                            <div class="team__thumb-three shine-animate">
+                                <img src="{% static 'customer_app/img/team/h3_team_img04.jpg' %}" alt="">
+                            </div>
+                            <div class="team__content-three">
+                                <h4 class="title"><a href='team-details.html'>Ralph Edwards</a></h4>
+                                <span>Finance Advisor</span>
+                            </div>
+                            <div class="team-social team__social-three">
+                                <ul class="list-wrap">
+                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                                <div class="social-toggle-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- team-area-three -->
+        <!-- testimonial-area -->
+        <!-- <section class="testimonial__area-three testimonial__bg" data-background="{% static 'customer_app/img/bg/h3_testimonial_bg.jpg' %}">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="testimonial__img-wrap-two">
+                            <img src="{% static 'customer_app/img/images/h3_testimonial_img.png' %}" alt="">
+                            <div class="testimonial__img-shape-two">
+                                <img src="{% static 'customer_app/img/images/h3_testimonial_shape01.png' %}" alt="" class="alltuchtopdown"> -->
+                                <!-- <img src="{% static 'customer_app/img/images/h3_testimonial_shape02.png' %}" alt="" class="rotateme"> -->
+                                <!-- <img src="{% static 'customer_app/img/images/h3_testimonial_shape03.png' %}" alt=""> -->
+                            <!-- </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-7">
+                        <div class="testimonial__item-wrap">
+                            <div class="swiper-container testimonial-active-two">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__item-three">
+                                            <div class="testimonial__rating testimonial__rating-two">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p>“Great service from Business Insight. Provided fast, reliable and affordable service for ITR filing.</p>
+                                            <div class="testimonial__bottom">
+                                                <div class="testimonial__info-three">
+                                                    <h4 class="title">Mr.Robey Alexa</h4>
+                                                    <span>CEO, Moie Agency</span>
+                                                </div>
+                                                <div class="testimonial__icon">
+                                                    <img src="{% static 'customer_app/img/icon/quote02.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__item-three">
+                                            <div class="testimonial__rating testimonial__rating-two">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p>“I am an NRI. They have taken care of my complete ITR job in a professional way. I strongly recommend their services..</p>
+                                            <div class="testimonial__bottom">
+                                                <div class="testimonial__info-three">
+                                                    <h4 class="title">Kristin Watson</h4>
+                                                    <span>CEO,JAKS Shans</span>
+                                                </div>
+                                                <div class="testimonial__icon">
+                                                    <img src="{% static 'customer_app/img/icon/quote02.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial__nav-two">
+                                    <div class="testimonial-button-prev"><i class="flaticon-right-arrow"></i></div>
+                                    <div class="testimonial-button-next"><i class="flaticon-right-arrow"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- testimonial-area-end -->
+        <!-- call-back-area -->
+        <!-- <section class="call-back-area call-back-area-two">
+            <div class="container">
+                <div class="call-back-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="call-back-content">
+                                <div class="section-title white-title mb-10 tg-heading-subheading animation-style3">
+                                    <h2 class="title tg-element-title">Request A Call Back</h2>
+                                </div>
+                                <p>Ever find yourself staring at your computer screen slogan to come to mind? Oftentimes.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="call-back-form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-grp">
+                                                <input type="text" placeholder="Name *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-grp">
+                                                <input type="email" placeholder="E-mail *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-grp">
+                                                <input type="number" placeholder="Phone *">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn">Send Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- call-back-area-end -->
+        <!-- blog-post-area -->
+        <!-- <section class="blog__post-area-two blog__post-area-three blog__post-bg-two" data-background="{% static 'customer_app/img/bg/blog_post_bg.jpg' %}">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                            <span class="sub-title">OUR BLOG UPDATE</span>
+                            <h2 class="title tg-element-title">Featured News And Insights</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-two">
+                            <div class="blog__post-thumb-two">
+                                <a href='blog-details.html'><img src="{% static 'customer_app/img/blog/h2_blog_post01.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="blog__post-content-two">
+                                <div class="blog-post-meta">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <a class='blog__post-tag-two' href='blog.html'>Business</a>
+                                        </li>
+                                        <li><i class="fas fa-calendar-alt"></i>Oct 21, 2024</li>
+                                    </ul>
+                                </div>
+                                <h2 class="title"><a href='blog-details.html'>Marketing your area business downturn now a days</a></h2>
+                                <div class="blog-avatar">
+                                    <div class="avatar-thumb">
+                                        <img src="{% static 'customer_app/img/blog/blog_avatar01.png' %}" alt="">
+                                    </div>
+                                    <div class="avatar-content">
+                                        <p>By <a href='blog-details.html'>Doman Smith</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-two">
+                            <div class="blog__post-thumb-two">
+                                <a href='blog-details.html'><img src="{% static 'customer_app/img/blog/h2_blog_post02.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="blog__post-content-two">
+                                <div class="blog-post-meta">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <a class='blog__post-tag-two' href='blog.html'>Audit</a>
+                                        </li>
+                                        <li><i class="fas fa-calendar-alt"></i>Oct 21, 2024</li>
+                                    </ul>
+                                </div>
+                                <h2 class="title"><a href='blog-details.html'>Improving The Double Diamond Design Process</a></h2>
+                                <div class="blog-avatar">
+                                    <div class="avatar-thumb">
+                                        <img src="{% static 'customer_app/img/blog/blog_avatar01.png' %}" alt="">
+                                    </div>
+                                    <div class="avatar-content">
+                                        <p>By <a href='blog-details.html'>Doman Smith</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog__post-two">
+                            <div class="blog__post-thumb-two">
+                                <a href='blog-details.html'><img src="{% static 'customer_app/img/blog/h2_blog_post03.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="blog__post-content-two">
+                                <div class="blog-post-meta">
+                                    <ul class="list-wrap">
+                                        <li>
+                                            <a class='blog__post-tag-two' href='blog.html'>Investment</a>
+                                        </li>
+                                        <li><i class="fas fa-calendar-alt"></i>Oct 21, 2024</li>
+                                    </ul>
+                                </div>
+                                <h2 class="title"><a href='blog-details.html'>Revealing Images With CSS Mask Animations</a></h2>
+                                <div class="blog-avatar">
+                                    <div class="avatar-thumb">
+                                        <img src="{% static 'customer_app/img/blog/blog_avatar01.png' %}" alt="">
+                                    </div>
+                                    <div class="avatar-content">
+                                        <p>By <a href='blog-details.html'>Doman Smith</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-shape-wrap">
+                <img src="{% static 'customer_app/img/images/h3_blog_shape01.png' %}" alt="" data-aos="fade-right" data-aos-delay="400">
+                <img src="{% static 'customer_app/img/images/h3_blog_shape02.png' %}" alt="" data-aos="fade-left" data-aos-delay="400">
+            </div>
+        </section> -->
+        <!-- blog-post-area-end -->
+    </main>
+    <!-- main-area-end -->
+
+
+    
+    {% endblock content %}

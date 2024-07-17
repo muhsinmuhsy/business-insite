@@ -1,0 +1,32 @@
+{% extends "admin_app/base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'admin_app/components/alert.html' %}
+
+<div class="card">
+    <h4 class="bold">Total Services: {{ services_count }}</h4>
+    <a href="{% url 'service_list' %}">View</a>
+</div>
+
+<div class="card">
+    <h4 class="bold">Costomer Pages</h4>
+    <ul>
+        <li>
+            <a href="{% url 'home' %}">Home </a>
+        </li>
+        <li>
+            <a href="{% url 'about' %}">about </a>
+        </li>
+        <li>
+            <a href="{% url 'services' %}">services </a>
+        </li>
+        <li>
+            <a href="{% url 'contact' %}">contact </a>
+        </li>
+    </ul>
+</div>
+
+{% endblock content %}
+           
+   

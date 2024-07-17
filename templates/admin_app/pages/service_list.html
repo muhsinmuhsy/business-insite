@@ -1,0 +1,57 @@
+{% extends "admin_app/base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="container mt-5" style="margin-top: 70px;">
+    {% include 'admin_app/components/alert.html' %}
+    <div class="d-flex justify-content-end" style="margin-bottom: 10px;">
+        <a href="{% url 'service_add' %}">
+            <button class="btn btn-primary">Add Services</button>
+        </a>
+        
+    </div>
+    <table class="table table-bordered bg-information">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service in services %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>
+                    {% if service.image %}
+                        <img src="{{ service.image.url }}" alt="{{ service.title }}" style="max-width: 100px; max-height: 100px;">
+                    {% else %}
+                        No Image
+                    {% endif %}
+                </td>
+                <td>{{ service.title }}</td>
+                <td>{{ service.description }}</td>
+                <td>
+                    <div class="btn-group">
+                        <a href="{% url 'service_edit' service_id=service.id %}" class="btn btn-sm btn-outline-primary">
+                            <input type="submit" value="edit">
+                        </a>
+                        <a href="{% url 'service_delete' service_id=service.id %} " class="btn btn-sm btn-outline-danger"
+                        onclick="return confirm('Are you sure you want to delete {{ service.title }}?');">
+                            <input type="submit" value="delete">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+</div>
+
+
+
+{% endblock content%}
